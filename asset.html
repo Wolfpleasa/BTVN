@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tài sản</title>
+    <!-- Phần thư viện -->
+
+    <!-- Phần dùng chung -->
+    <link rel="stylesheet" href="./common.css">
+    <!-- Phần riêng từng màn hình -->
+    <link rel="stylesheet" href="./asset.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Phần menu -->
+        <div class="menu">
+            <!-- menu lớn -->
+            <div class="large-menu">
+                <div class="home">
+                    <div class="QLTS">MISA QLTS</div>
+                    <div class="tiny"></div>
+                </div>
+                <div class="item">
+                    <div class="TV">
+                        <span>Tổng quan</span>
+                    </div>
+                    <div class="car">
+                        <span>Tài sản</span>
+                    </div>
+                    <div class="road1">
+                        <span>Tài sản HT-ĐB</span>
+                    </div>
+                    <!-- phần sub-menu -->
+                    <div class="sub-menu hide-item">
+                        <p>Ghi tăng</p>
+                        <p>Thay đổi thông tin</p>
+                        <p>Đánh giá lại</p>
+                        <p>Tính hao mòn</p>
+                        <p>Kiểm kê</p>
+                        <p>Ghi giảm</p>
+                    </div>
+                    <div class="tool">
+                        <span>Công cụ dụng cụ</span>
+                    </div>
+                    <div class="title">
+                        <span>Danh mục</span>
+                    </div>
+                    <div class="glass">
+                        <span>Tra cứu</span>
+                    </div>
+                    <div class="report">
+                        <span>Báo cáo</span>
+                    </div>
+                </div>
+                <div class="small">
+                    <span>Menu lớn</span>
+                </div>
+            </div>
+            <!-- menu bé -->
+            <div class="small-menu hide-item">
+                <div class="small-menu-icon ">
+                    <div class="home"></div>
+                    <div class="item">
+                        <div class="TV"></div>
+                        <div class="car"></div>
+                        <div class="road "></div>
+                        <div class="item1"></div>
+                    </div>
+                    <div class="small"></div>
+                </div>
+                <!-- phần sub-menu -->
+                <div class="small-menu-detail hide-item">
+                    <div class="top"></div>
+                    <div class="detail">
+                        <ul class="ul">
+                            Tài sản hạ tầng đường bộ
+                            <li>Ghi tăng</li>
+                            <li>Thay đổi thông tin</li>
+                            <li>Đánh giá lại</li>
+                            <li>Tính hao mòn</li>
+                            <li>Kiểm kê</li>
+                            <li>Ghi giảm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần nội dung -->
+        <div class="content">
+            <!-- phần slidebar -->
+            <div class="slidebar">
+                <div class="slidebar-select">
+                    <label for="">Sở tài chính</label>
+                    <select name="" id="">
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+                <div class="icon">
+                    <div class="bell"></div>
+                    <div class="custom"></div>
+                    <div class="quiz"></div>
+                    <div class="logout"></div>
+                </div>
+            </div>
+            <!-- Phần thay thế nội dung từng trang -->
+            <div class="main-content ">
+                <div class="head-content">
+                    <div class="start">
+                        <div class="text"> Danh sách tài sản</div>
+                        <div class="reroll"></div>
+                    </div>
+                    <div class="end">
+                        <button></button>
+                        <div class="end-select"></div>
+                    </div>
+                </div>
+                <div class="body-content">
+                    <div class="head">
+                        <div class="find">
+                            <div class="glass"><img src="./images/glass.png" alt=""></div>
+                            <input type="text" name="" id="" placeholder="Tìm kiếm tài sản">
+
+                        </div>
+                        <div class="icon">
+                            <div class="excel"></div>
+                            <div class="print"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <!-- phần tạo bảng -->
+                    <div class="main">
+                        <div id="gridAsset">
+                            <div class="hide-item">
+                                <div class="col" FieldName="checkbox"><input type="checkbox" name="" id=""></div>
+                                <div class="col" FieldName="STT">STT</div>
+                                <div class="col" FieldName="AssetCode">Mã tài sản</div>
+                                <div class="col" FieldName="AssetName">Tên tài sản</div>
+                                <div class="col" FieldName="AssetType">Loại tài sản</div>
+                                <div class="col" FieldName="DepartmentName">Bộ phần sử dụng</div>
+                                <div class="col" FieldName="Quantity">Số lượng</div>
+                                <div class="col" FieldName="AssetCost" DataType="Number">Nguyên giá</div>
+                                <div class="col" FieldName="Salary" DataType="Number">HM/KH lũy kế</div>
+                                <div class="col" FieldName="ValueLeft" DataType="Number">Giá trị còn lại</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần thư viện -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Phần dùng chung -->
+    <script src="common.js"></script>
+    <script src="data.js"></script>
+    <!-- Phần riêng từng màn hình -->
+    <script src="asset.js"></script>
+</body>
+
+</html>

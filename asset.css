@@ -1,0 +1,150 @@
+* {}
+
+.main-content {
+    width: 100%;
+    height: calc(100% - 50px);
+    line-height: 50px;
+    background-color: #ece4e473;
+}
+
+.main-content .head-content {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .head-content .start {
+    height: 100%;
+    width: 210px;
+    display: flex;
+}
+
+.main-content .head-content .text {
+    margin-left: 10px;
+    color: rgb(58, 56, 56);
+    font-size: 20px;
+}
+
+.main-content .head-content .reroll {
+    height: 50px;
+    background-image: url("./images/reroll.png");
+    background-repeat: no-repeat;
+    width: 50px;
+}
+
+.head-content .end {
+    display: flex;
+    width: 180px;
+}
+
+.head-content .end button {
+    background-image: url(./images/button.png);
+    border: none;
+    display: inline-block;
+    height: 30px;
+    margin-top: 10px;
+    padding-right: 40px;
+    padding-left: 20px;
+    border-radius: 2px;
+    width: 93px;
+    cursor: pointer;
+}
+
+.head-content .end .end-select {
+    width: 70px;
+    background-image: url("./images/end-select.png");
+    background-repeat: no-repeat;
+    margin-top: 6px;
+}
+
+.main-content .body-content {
+    height: calc(100% - 70px);
+    width: calc(100% - 40px);
+    margin-left: 20px;
+}
+
+.body-content .head {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.head .find {
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 20px;
+    width: 210px;
+    border: 1px solid #ccc;
+    display: flex;
+    border-radius: 3px;
+}
+
+.find .glass {
+    height: 100%;
+    width: 40px;
+}
+
+.find .glass img {
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.find input {
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.head .icon {
+    width: 170px;
+    height: 100%;
+    display: flex;
+}
+
+.head .icon .excel {
+    height: 100%;
+    background-image: url("./images/excel.png");
+    background-repeat: no-repeat;
+    width: 50px;
+}
+
+.head .icon .print {
+    height: 100%;
+    background-image: url("./images/print.png");
+    background-repeat: no-repeat;
+    width: 70px;
+}
+
+.head .icon .dot {
+    height: 100%;
+    background-image: url("./images/dot.png");
+    background-repeat: no-repeat;
+    width: 50px;
+}
+
+.body-content .main {
+    height: calc(100% - 50px);
+    overflow: scroll;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+div#gridAsset {
+    width: 100%;
+}
+
+.selected-row {
+    background: rgb(141, 108, 108);
+}

@@ -1,0 +1,342 @@
+body,
+html {
+    font-size: 13px;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.large-menu {
+    height: 100%;
+    width: 250px;
+    background-color: #193348;
+}
+
+.large-menu .home {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/home.png");
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.large-menu .home .QLTS {
+    height: 100%;
+    color: white;
+    line-height: 50px;
+    width: 144px;
+    font-size: 25px;
+    margin-left: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.large-menu .home .tiny {
+    height: 100%;
+    background-image: url("./images/tiny.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    cursor: pointer;
+}
+
+.large-menu .item {
+    height: calc(100% - 98px);
+    width: 100%;
+}
+
+.large-menu .item span {
+    color: white;
+    font-size: 15px;
+    line-height: 50px;
+    margin-left: 60px;
+}
+
+.large-menu .small span {
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    margin-left: 60px;
+}
+
+.large-menu .item p {
+    color: white;
+    font-size: 15px;
+    margin-left: 45px;
+}
+
+.large-menu .item .TV {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/TV.png");
+    background-repeat: no-repeat;
+}
+
+.large-menu .item .car {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/car.png");
+    background-repeat: no-repeat;
+}
+
+.large-menu .item .car span::after {
+    content: url("./images/down-arrow.png");
+    padding-left: 108px;
+}
+
+.large-menu .item .road1 {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/road.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.large-menu .item .road1 span::after {
+    content: url("./images/down-arrow.png");
+    padding-left: 60px;
+}
+
+.large-menu .item .sub-menu {
+    margin-left: 15px;
+    background-color: #546080;
+}
+
+.large-menu .item .tool {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/tool.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.large-menu .item .tool span::after {
+    content: url("./images/down-arrow.png");
+    padding-left: 50px;
+}
+
+.large-menu .item .title {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/title.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.large-menu .item .glass {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/glass1.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.large-menu .item .report {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/report.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.large-menu .small {
+    height: 45px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-image: url("./images/slide.png");
+    background-repeat: no-repeat;
+}
+
+menu {
+    height: 100%;
+    background-color: #193348;
+}
+
+.small-menu {
+    display: flex;
+    height: 100%;
+    background-color: #193348;
+}
+
+.small-menu .small-menu-icon {
+    height: 100%;
+    width: 60px;
+}
+
+.small-menu .home {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/home.png");
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.small-menu .item {
+    height: calc(100% - 98px);
+    width: 100%;
+}
+
+.small-menu .item .TV {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/TV.png");
+    background-repeat: no-repeat;
+}
+
+.small-menu .item .car {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/car.png");
+    background-repeat: no-repeat;
+}
+
+.small-menu .item .road {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/road.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.small-menu .item .road:hover {
+    background-image: url("./images/lightroad.png");
+    background-repeat: no-repeat;
+}
+
+.small-menu .item .lightroad {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/lightroad.png");
+    background-repeat: no-repeat;
+}
+
+.small-menu .item .item1 {
+    height: 200px;
+    width: 100%;
+    background-image: url("./images/item1.png");
+    background-repeat: no-repeat;
+}
+
+.small-menu .small {
+    height: 45px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-image: url("./images/slide.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.small-menu .small-menu-detail {
+    height: 100%;
+    background-color: #fff;
+    width: 200px;
+}
+
+.small-menu-detail .top {
+    height: 50px;
+    background-color: #ddd;
+}
+
+ul.ul {
+    list-style-type: none;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+ul.ul li {
+    margin-top: 10px;
+}
+
+.ul li::before {
+    content: url("./images/right-arrow.png");
+    padding-right: 20px;
+}
+
+.content {
+    width: calc(100% - 50px);
+}
+
+.slidebar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    color: rgb(58, 56, 56);
+    font-size: 20px;
+    line-height: 50px;
+    justify-content: space-between;
+}
+
+.slidebar-select {
+    margin-left: 10px;
+    width: 205px;
+}
+
+.slidebar-select select {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.3;
+    padding: 9px 21px 7.5px 12px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.slidebar .icon {
+    width: 205px;
+    height: 100%;
+    display: flex;
+    margin-right: 10px;
+}
+
+.slidebar .icon .bell {
+    height: 100%;
+    background-image: url("./images/bell.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    margin-top: 2px;
+}
+
+.slidebar .icon .custom {
+    height: 100%;
+    background-image: url("./images/custom.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    margin-top: 3px;
+}
+
+.slidebar .icon .quiz {
+    height: 100%;
+    background-image: url("./images/quiz.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    margin-top: 4px;
+}
+
+.slidebar .icon .logout {
+    height: 100%;
+    background-image: url("./images/logout.png");
+    background-repeat: no-repeat;
+    width: 50px;
+}
+
+.hide-item {
+    display: none;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.d-block {
+    display: block;
+}
