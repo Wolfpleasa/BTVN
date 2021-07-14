@@ -16,3 +16,15 @@ $(".button.cancel").click(function(){
 $(".refresh").click(function(){
     location.reload();
 })
+
+$('.image').click(function(){
+    $('#myFile').trigger('click');
+})
+
+$('#myFile').click(function(e){
+    $('#myFile').change(function(e){
+        var img = URL.createObjectURL(e.target.files[0]);
+        $('.image').css("background-image", `url(${img})`);
+    })
+})
+
